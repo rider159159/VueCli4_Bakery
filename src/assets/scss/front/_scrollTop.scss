@@ -1,0 +1,16 @@
+.toplink{
+    border-radius: 0;
+    bottom: 50px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 42px;
+    right: 50px;
+    text-align: center;
+    width: 40px;
+    border-radius: 0%;
+    transition-duration: 500ms;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 10;
+    display: block;
+}

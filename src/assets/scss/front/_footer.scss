@@ -1,0 +1,105 @@
+.footer-area {
+    position: relative;
+    color: #fff;
+
+    .bg-img {
+        background-image: url(./assets/image/bg-img/3.jpg);
+        padding-top: 100px;
+        z-index: -1;
+
+        &::after {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+        }
+    }
+
+    .copyright {
+        background: $gray-800;
+        color: $gray-200;
+    }
+
+    a {
+        color: $gray-500;
+
+    }
+}
+
+
+// 
+.footer-widget {
+    position: relative;
+    z-index: 1;
+
+    h5 {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    a {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        line-height: 1.3;
+
+        i {
+            flex: 0 0 30px;
+            color: $primary;
+        }
+    }
+
+    .single-recent-news {
+        display: flex;
+        margin-bottom: 30px;
+
+    }
+
+    .shrink-image {
+        margin-right: 10px;
+
+        img {
+            height: 70px;
+
+        }
+    }
+
+    .shrink-content {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+.footer-social-info {
+    a {
+        i {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            color: #ffffff;
+            border: 1px solid #91b122;
+            line-height: 40px;
+            transition-duration: 500ms;
+        }
+        span{
+            margin-left: 20px;
+        }
+    }
+
+     a:focus span, a:hover span {
+        color: #ffffff;
+    }
+    a:focus i , a:hover i{
+        background-color: #91b122;
+    } 
+}

@@ -1,0 +1,229 @@
+.nav-wrap {
+    height: 80px;
+
+    .cartIcon {
+        cursor: pointer;
+    }
+
+    // 該頁面所有 nav-link 、 cartIcon a 共通設定
+    .nav-link,
+    .cartIcon a {
+        color: $gray-600;
+        display: block;
+    }
+
+    //該頁面所有 a 連結變色設定 
+    a:hover,
+    a:focus,
+    a:active,
+    .active {
+        color: $primary;
+    }
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // 漢堡按鈕 CSS 設定
+    .navbarToggler {
+        display: inline-block;
+        cursor: pointer;
+
+        span {
+            position: relative;
+            background-color: $gray-600;
+            border-radius: 3px;
+            display: block;
+            height: 3px;
+            margin-top: 5px;
+            padding: 0;
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+
+
+    // 上方選單預設隱藏，大於 992 px 開啟
+    .top-menu {
+        display: none;
+
+        // 上方 a 選單 個別設定
+        .nav-link,
+        .cartIcon a {
+            padding: 1rem 1.5rem;
+        }
+    }
+
+    //  漢堡按鈕預設開啟，大於 992px 隱藏
+    .classy-navbar-toggler {
+        display: flex;
+
+    }
+
+    @media (min-width: 992px) {
+        .top-menu {
+            display: flex;
+        }
+
+        .classy-navbar-toggler {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .bg {
+        width: 98%;
+    }
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background-image: url( ./assets/tree.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 130%;
+  letter-spacing: 5px;
+}
+.logo_text{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $secondary;
+    letter-spacing: 2px;
+}
+// 左側選單樣式設計
+.side-menu {
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: -310px;
+    z-index: 1000;
+    width: 300px;
+    height: 100%;
+    transition-duration: 500ms;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .sidenav {
+        padding: 50px 0;
+    }
+
+
+    ul {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .nav-link {
+        background-color: #f2f4f8;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 0 10px;
+        height: 38px;
+        line-height: 38px;
+        display: block;
+        color: $gray-600;
+    }
+
+
+}
+
+// 左側選單 X 按鈕設計
+.side-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 12;
+
+    .cross-wrap {
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        position: relative;
+
+        span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            border-radius: 6px;
+            background: #232323;
+        }
+
+        span.bottom {
+            bottom: 12px;
+            left: 0;
+            transform: rotate(-45deg);
+        }
+
+        span.top {
+            top: 12px;
+            left: 0;
+            transform: rotate(45deg);
+        }
+
+        .classycloseIcon .cross-wrap span.top {
+            top: 12px;
+            left: 0;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+
+// 左側選單開啟
+.navbar.active {
+
+    // 漢堡選單開啟、關閉特效
+    .navbarToggler span:nth-of-type(1) {
+        transform: rotate3d(0, 0, 1, 45deg);
+        top: 8px;
+
+    }
+
+    .navbarToggler span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .navbarToggler span:nth-of-type(3) {
+        transform: rotate3d(0, 0, 1, -45deg);
+        top: -8px;
+    }
+
+    // 左側選單從負數 px 滑出至主頁
+    .side-menu {
+        left: 0;
+
+    }
+}
+
+.cartIcon {
+    position: relative;
+    display: inline-block;
+}
+
+.cartIcon span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 9;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #91b122;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+}

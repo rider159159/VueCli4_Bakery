@@ -1,0 +1,26 @@
+.mb-100{
+    margin-bottom: 100px;;
+}
+.mt-40{
+    margin-top:40px ;
+}
+.mb-40{
+    margin-bottom:40px ;
+}
+.mb-50{
+    margin-bottom:50px ;
+
+}
+// 主要按鈕配色
+.btn-color{
+    color:$white;
+    background-color: $primary;
+    &:focus, &:hover,&:active{
+        background-color:$dark;
+        color:$white;
+    }
+}
+// 文字大小
+.text-xl{
+    font-size: 4rem;
+}

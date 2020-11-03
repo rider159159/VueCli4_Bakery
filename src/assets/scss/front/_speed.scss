@@ -1,0 +1,215 @@
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+}
+
+// a 標籤動畫設定，並取消下底線
+a,
+a:focus,
+a:hover {
+    transition-duration: 500ms;
+    transition-property: color, background-color;
+    text-decoration: none;
+}
+
+.header-area {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+}
+
+// 購物車數字
+.cart-quantity {
+    max-width: 3.5rem;
+}
+
+.table-title {
+    font-size: 2rem;
+}
+
+.cartOver-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+//文字大小
+.font-szie-115 {
+    font-size: 1.15rem;
+}
+
+.font-szie-150 {
+    font-size: 1.5rem;
+}
+
+.order-list {
+    width: 100%;
+    box-shadow: 0 0 5px #bebebe;
+    padding: 25px;
+    margin-bottom: 10px;
+
+    .ororder-list-content {
+        width: 100%;
+        margin-left: 10px;
+
+        ul {
+            flex-direction: column;
+            justify-content: space-between;
+            display: flex;
+            height: 100%;
+        }
+    }
+}
+
+.ororder-list-delete {
+    display: flex;
+    align-items: center;
+
+}
+
+.cart_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.Product_farmer_img {
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top:180px;
+    box-sizing: border-box;
+    border:2px white solid;
+}
+.card-product{
+    width: 31%;
+    max-width: 31%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1% 10px;
+    overflow: hidden;
+    border-radius: 7px;
+    color: #2a2e2d;
+    background: #fbfbfb;
+    position: relative;
+    box-shadow: 2px 2px 5px #6c757d
+}
+@media (max-width: 767px){
+    .card-product{
+        width: 48%;
+        max-width: 48%;
+    }
+}
+@media (max-width: 486px){
+    .card-product {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.product_img{
+    height: 220px;
+    background-position: 50%;
+    background-size: cover;
+    box-shadow: inset 0 0 15px #c3c3c3;
+    overflow: hidden;
+}
+.card-product-body{
+    padding: 1.25rem;
+    
+}
+.card-product-title{
+    font-weight: bolder;
+}
+.card-product-addtocard i{
+    color: $secondary;
+    border:1px $secondary solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.card-product-addtocard i:focus,.card-product-addtocard i:hover{
+    background: $secondary;
+    color: #fff;
+    transition-duration: 500ms;
+}
+.card-product-link{
+    display: flex;
+    background: hsla(0,0%,100%,.6);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+    transform: translatey(500px);
+    font-size: 1.35rem;
+
+}
+.product_img:hover .card-product-link{
+    transform: translatey(0px);
+}
+// load 動畫
+@keyframes ldio-5pq6ewhvnxk {
+    0% { opacity: 1 }
+    50% { opacity: .5 }
+    100% { opacity: 1 }
+  }
+  .ldio-5pq6ewhvnxk div {
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    top: 60px;
+    animation: ldio-5pq6ewhvnxk 1s cubic-bezier(0.5,0,0.5,1) infinite;
+  }.ldio-5pq6ewhvnxk div:nth-child(1) {
+    transform: translate(30px,0);
+    background: #e15b64;
+    animation-delay: -0.6s;
+  }.ldio-5pq6ewhvnxk div:nth-child(2) {
+    transform: translate(70px,0);
+    background: #f47e60;
+    animation-delay: -0.4s;
+  }.ldio-5pq6ewhvnxk div:nth-child(3) {
+    transform: translate(110px,0);
+    background: #f8b26a;
+    animation-delay: -0.2s;
+  }.ldio-5pq6ewhvnxk div:nth-child(4) {
+    transform: translate(150px,0);
+    background: #abbd81;
+    animation-delay: -1s;
+  }
+  .loadingio-spinner-bars-iz30mgmsu1d {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: #ffffff;
+  }
+  .ldio-5pq6ewhvnxk {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-5pq6ewhvnxk div { box-sizing: content-box; }
+  //單一商品頁面
+  .swiper-wrapper .product-swiper-slide{
+    //   width: 90px;
+    //   height: 90px;
+      margin-right:10px;
+  }

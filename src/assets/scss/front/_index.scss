@@ -1,0 +1,128 @@
+p {
+    color: $gray-600;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.farm-introduce {
+    padding-top: 100px;
+
+    .farm-introduce-item {
+        text-align: center;
+        font-size: 1.5rem;
+        color: $dark;
+        font-weight: 600;
+
+        img {
+            margin-bottom: 20px;
+
+        }
+    }
+
+}
+
+.about-us-area {
+
+    // youtube 設定
+    .y-video__media {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-width: 0;
+    }
+
+    .y-video__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        border-width: 0;
+        background-color: transparent;
+        width: 68px;
+        height: 48px;
+        cursor: pointer;
+    }
+
+    .y-video__button-icon {
+        fill: #fff;
+    }
+}
+
+.section-heading {
+    margin-bottom: 50px;
+
+    p {
+        font-size: 0.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+
+    h2 {
+        margin: 10px 0 20px;
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: 3px;
+
+        span {
+            color: $primary;
+        }
+    }
+}
+
+.about-us-video {
+    position: relative;
+}
+
+.farm-idea {
+    position: relative;
+    background: $gray-100;
+
+    .bg-img {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        overflow: hidden;
+        background-image: url(/assets/image/bg-img/7.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position:center center;
+        height: 300px;
+        position: relative;
+    }
+
+}
+@media (min-width: 768px){
+    .farm-idea .bg-img {
+        height: 100%;
+        position: absolute;
+
+    }
+}
+
+.farm-idea-introduce {
+    padding: 50px;
+}
+
+.service-title {
+    h5 {
+        line-height: 1.3;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    i{
+        color: $primary;
+    }
+}
+
+.subEmail{
+    background-image: url(/assets/image/bg-img/8.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
