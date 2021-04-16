@@ -2,7 +2,7 @@
   <!-- bidirectional data binding（双向数据绑定） -->
 <div>
 
-
+<div>test</div>
   <div v-for="n in 2" :key="n" class="loadingShow">
     <ckeditor v-model="editorData" :config="editorConfig"></ckeditor>
   </div>
