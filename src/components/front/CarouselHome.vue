@@ -2,20 +2,20 @@
   <swiper ref="mySwiper" :options="swiperOptions">
     <swiper-slide class="swiper-item1">
       <div class="swiper-item-title" data-aos="fade-down">
-        <p class="text-white text-xl">農產嘉年華滿500送50！</p>
-        <h3 class="text-white">降低農漁牧業受疫情衝擊，更強健您的健康！</h3>
+        <p class="text-white text-xl h1">全民抗疫大作戰! </p>
+        <h3 class="text-white h5">本店消費滿百元，輸入折價券一律 9 折</h3>
       </div>
     </swiper-slide>
     <swiper-slide class="swiper-item2">
       <div class="swiper-item-title" data-aos="fade-up">
-        <p class="text-white text-xl">農產嘉年華滿500送50！</p>
-        <h3 class="text-white">降低農漁牧業受疫情衝擊，更強健您的健康！</h3>
+        <p class="text-white text-xl h1">炙燒食堂周年慶！</p>
+        <h3 class="text-white h5">內用白飯、湯品一律免費。</h3>
       </div>
     </swiper-slide>
     <swiper-slide class="swiper-item3">
       <div class="swiper-item-title" data-aos="fade-down">
-        <p class="text-white text-xl">農產嘉年華滿500送50！</p>
-        <h3 class="text-white">降低農漁牧業受疫情衝擊，更強健您的健康！</h3>
+        <p class="text-white text-xl h1">分享好康!</p>
+        <h3 class="text-white h5">內用首次打卡，附贈 20 元，糖心蛋 一份</h3>
       </div>
     </swiper-slide>
     <div
@@ -85,7 +85,7 @@ export default {
 
  <style scoped lang="scss">
  .swiper-item1 {
-    background: url('~@/assets/image/bg-img/1.jpg') center center no-repeat;
+    background: url('~@/assets/image/bg-img/swiper1.jpg') center center no-repeat;
 }
 .swiper-item2 {
     background: url('~@/assets/image/bg-img/8.jpg') center center no-repeat;

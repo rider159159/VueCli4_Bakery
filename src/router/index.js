@@ -4,6 +4,11 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/test',
+    name: 'test',
+    component: () => import('../views/test.vue'),
+  },
   // 進入不存在頁面會是空白的，因此新增設定
   {
     path: '*',

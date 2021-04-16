@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="nav-wrap bg-white">
+    <div class="nav-wrap layout-navbar">
       <!-- 上方 nav -->
       <nav class="navbar container">
         <a href="#" @click.prevent="routerLink('')" class="logo"></a>
-        <span class="logo_text ml-2">讀蔬會</span>
+        <span class="logo_text ml-3">炙燒食堂</span>
         <ul class="ml-auto top-menu">
           <li class>
             <a href="#" @click.prevent="routerLink('')" class="nav-link"
@@ -22,19 +22,16 @@
             >
           </li>
           <li>
-            <a href="#" @click.prevent="routerLink('news')" class="nav-link"
-              >最新消息</a
-            >
-          </li>
-          <li>
             <a href="#" @click.prevent="routerLink('admin')" class="nav-link"
               >管理頁面</a
             >
           </li>
-          <div class="cartIcon" @click="showModal()">
-            <i class="fas fa-shopping-cart"></i>
-            <span v-if="cart">{{ cart.length }}</span>
-          </div>
+          <li>
+            <a href="# " @click="showModal()" class="nav-link cartIcon">
+              <i class="fas fa-shopping-cart"></i>
+              <span v-if="cart">{{ cart.length }}</span>
+            </a>
+          </li>
         </ul>
         <div class="classy-navbar-toggler">
           <span class="navbarToggler" v-on:click="sideNavbarActive">
@@ -75,13 +72,9 @@
                   >關於我們</a
                 >
               </li>
-              <li>
-                <a href="#" @click.prevent="routerLink('news')" class="nav-link"
-                  >最新消息</a
-                >
-              </li>
             </ul>
             <div class="cartIcon" @click="showModal()">
+              <a href=""></a>
               <span>{{ cart.length }}</span>
               <i class="fas fa-shopping-cart"></i>
             </div>

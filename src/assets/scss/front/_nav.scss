@@ -1,6 +1,7 @@
 .nav-wrap {
     height: 80px;
-
+    display: flex;
+    align-items: center;
     .cartIcon {
         cursor: pointer;
     }
@@ -8,7 +9,7 @@
     // 該頁面所有 nav-link 、 cartIcon a 共通設定
     .nav-link,
     .cartIcon a {
-        color: $gray-600;
+        color: rgba(255,255,255,.7);
         display: block;
     }
 
@@ -17,7 +18,7 @@
     a:focus,
     a:active,
     .active {
-        color: $primary;
+        color: rgba(255,255,255,1);
     }
 
 }
@@ -86,7 +87,7 @@
 .logo {
     width: 45px;
     height: 45px;
-    background-image: url( ./assets/tree.svg);
+    background-image: url( ./assets/image/soup.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
@@ -97,8 +98,8 @@
 .logo_text{
     font-size: 2.5rem;
     font-weight: 700;
-    color: $secondary;
     letter-spacing: 2px;
+    color: #ffffff;
 }
 // 左側選單樣式設計
 .side-menu {
@@ -210,20 +211,27 @@
 .cartIcon {
     position: relative;
     display: inline-block;
+    i{
+        font-size: 20px;
+    }
 }
 
 .cartIcon span {
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: 10px;
+    right: 15px;
     z-index: 9;
     display: block;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #91b122;
+    background-color: #BB5E00;
     color: #ffffff;
     font-size: 10px;
     text-align: center;
     line-height: 15px;
+}
+
+.layout-navbar{
+    background: rgba(0,0,0,.8);
 }

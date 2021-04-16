@@ -1,10 +1,15 @@
 <template>
   <div>
     <CarouselHome></CarouselHome>
+    <ellipsis :content="content"  v-html="con" ></ellipsis>
     <!-- 區塊一，農場介紹 -->
-     <button type="button" class="btn btn-primary m-3" @click="addtoCart(product.id, product.num)">
-            add to cart
-          </button>
+    <button
+      type="button"
+      class="btn btn-primary m-3"
+      @click="addtoCart(product.id, product.num)"
+    >
+      add to cart
+    </button>
     <section class="farm-introduce pb-5">
       <div class="container">
         <div class="row">
@@ -71,8 +76,11 @@
                 <img src="../../assets/image/core-img/decor.png" alt />
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetu adipiscing elit. Etiam nunc elit, pretium atlanta urna veloci, fermentum malesuda mina. Donec auctor nislec neque sagittis, sit amet dapibus pellentesque donal feugiat. Nulla mollis magna non
-                sanaliquet, volutpat do zutum, ultrices consectetur, ultrices at purus.
+                Lorem ipsum dolor sit amet, consectetu adipiscing elit. Etiam nunc elit,
+                pretium atlanta urna veloci, fermentum malesuda mina. Donec auctor nislec
+                neque sagittis, sit amet dapibus pellentesque donal feugiat. Nulla mollis
+                magna non sanaliquet, volutpat do zutum, ultrices consectetur, ultrices at
+                purus.
               </p>
               <a href="#" class="btn btn-color mt-40">Read More</a>
             </div>
@@ -103,15 +111,15 @@
                 <div class="row">
                   <div class="section-heading">
                     <p>WHAT WE DO</p>
-                    <h2>
-                      <span>在地食材</span>連繫在地情感
-                    </h2>
+                    <h2><span>在地食材</span>連繫在地情感</h2>
                     <img src="../../assets/image/core-img/decor.png" alt />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 mb-50">
-                    <p>與150位農民合作、約300項的蔬果來自在地農友，提供你好品質、新鮮又安全的食材。</p>
+                    <p>
+                      與150位農民合作、約300項的蔬果來自在地農友，提供你好品質、新鮮又安全的食材。
+                    </p>
                   </div>
                   <div class="col-12 col-lg-6">
                     <div class="single-service-area mb-50">
@@ -120,7 +128,9 @@
                         <i class="fas fa-lemon fa-2x mr-2"></i>
                         <h5>產地直採的用意為何？</h5>
                       </div>
-                      <p>我們與150位農民合作，約300項的蔬菜和水果來自於我們合作的在地農友，產地直送確保美味，安心的生鮮品質。</p>
+                      <p>
+                        我們與150位農民合作，約300項的蔬菜和水果來自於我們合作的在地農友，產地直送確保美味，安心的生鮮品質。
+                      </p>
                     </div>
                   </div>
                   <div class="col-12 col-lg-6">
@@ -130,7 +140,9 @@
                         <i class="fas fa-lightbulb fa-2x mr-2"></i>
                         <h5>產地直採是嶄新的理念嗎？</h5>
                       </div>
-                      <p>產地直採已經成為台灣市場的新主流，提供好品質，新鮮又安全的食材，同時也幫助農民增加獲利。</p>
+                      <p>
+                        產地直採已經成為台灣市場的新主流，提供好品質，新鮮又安全的食材，同時也幫助農民增加獲利。
+                      </p>
                     </div>
                   </div>
                   <div class="col-12 col-lg-6">
@@ -140,7 +152,9 @@
                         <i class="fas fa-dove fa-2x mr-2"></i>
                         <h5>未來的目標為何？</h5>
                       </div>
-                      <p>期望能夠成為台灣本地農友最可靠的伙伴，並協助農友由一般耕作農法轉變為履歷或有機種植耕種方式。</p>
+                      <p>
+                        期望能夠成為台灣本地農友最可靠的伙伴，並協助農友由一般耕作農法轉變為履歷或有機種植耕種方式。
+                      </p>
                     </div>
                   </div>
                   <div class="col-12 col-lg-6">
@@ -150,7 +164,9 @@
                         <i class="far fa-dot-circle fa-2x mr-2"></i>
                         <h5>下一步行動方向？</h5>
                       </div>
-                      <p>我們承諾以更實惠的價格讓本地食材成為餐桌上的日常幸福，而在未來我們期待能提供更多國產水果和蔬菜。</p>
+                      <p>
+                        我們承諾以更實惠的價格讓本地食材成為餐桌上的日常幸福，而在未來我們期待能提供更多國產水果和蔬菜。
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -182,6 +198,7 @@
 import CarouselHome from '@/components/front/CarouselHome.vue';
 import CarouselShop from '@/components/front/CarouselShop.vue';
 import LazyYoutubeVideo from 'vue-lazy-youtube-video';
+
 // aos 區域組件
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -194,12 +211,12 @@ export default {
   data() {
     return {
       isLoading: false,
+      content: '那麼，既然許多的經濟變革都是因為技術驅動的—像是大數據、演算法、集體智慧、軟體即服務(SAAS)、行動網路、雲端運算、機器學習與。那麼，既然許多的經濟變革都是因為技術驅動的—像是大數據、演算法、集體智慧、軟體即服務(SAAS)、行動網路、雲端運算、機器學習與。那麼，既然許多的經濟變革都是因為技術驅動的—像是大數據、演算法、集體智慧、軟體即服務(SAAS)、行動網路、雲端運算、機器學習與。濟變革都是因為技術驅動的—像是大數據、演算法、集體智慧、軟體即服務(SAAS)、行動網路、雲端運算、機器學習與。那麼，既然許多的經濟變革都是因為技術驅動的—像是大數據、演算法、集體智慧、軟體即服務(SAAS)、行動網路、雲端運算、機器學習與。那麼，既然許多的經濟變革都是因為技術驅動的—像是大數據、演算法、集體智慧、軟體即服務(SAAS)、行動網路、',
     };
   },
   components: {
     CarouselHome,
     CarouselShop,
-    LazyYoutubeVideo,
   },
 };
 </script>
