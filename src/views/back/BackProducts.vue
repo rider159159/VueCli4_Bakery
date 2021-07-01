@@ -186,34 +186,6 @@
                     <label class="form-check-label" for="is_enabled">是否啟用</label>
                   </div>
                 </div>
-                <!-- 農夫的 modal 區塊 -->
-                <div class="form-group">
-                  <label for="farmerName">農夫姓名</label>
-                  <input
-                    id="farmerName"
-                    v-model="tempProduct.options.farmer.name"
-                    class="form-control"
-                    type="text"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="farmerTitle">農夫標語</label>
-                  <input
-                    id="farmerTitle"
-                    v-model="tempProduct.options.farmer.title"
-                    class="form-control"
-                    type="text"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="farmerImg">農夫圖片</label>
-                  <input
-                    id="farmerImg"
-                    v-model="tempProduct.options.farmer.imageUrl"
-                    class="form-control"
-                    type="text"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -291,11 +263,14 @@ export default {
     getProducts(page = 1) {
       this.isLoading = true;
       const api = `${process.env.VUE_APP_APIPATH}/${process.env.VUE_APP_UUID}/admin/ec/products?page=${page}`;
+      console.log(123);
       this.$http.get(api).then((response) => {
         console.log(response);
         this.products = response.data.data;
         this.pagination = response.data.meta.pagination;
         this.isLoading = false;
+      }).catch((res) => {
+        console.log(res)
       });
     },
     getDetails(id) {

@@ -50,7 +50,6 @@
               <h5>最新消息</h5>
               <div class="single-recent-news d-flex">
                 <div class="shrink-image">
-                  <img src="../../assets/image/bg-img/5.jpg" alt />
                 </div>
                 <div class="shrink-content d-flex">
                   <div class="shrink-title">
@@ -63,7 +62,6 @@
               </div>
               <div class="single-recent-news d-flex">
                 <div class="shrink-image">
-                  <img src="../../assets/image/bg-img/4.jpg" alt />
                 </div>
                 <div class="shrink-content d-flex">
                   <div class="shrink-title">

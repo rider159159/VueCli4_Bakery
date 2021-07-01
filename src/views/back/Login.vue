@@ -55,7 +55,6 @@ export default {
     signin() {
       this.isLoading = true;
       const url = `${process.env.VUE_APP_APIPATH}/auth/login`;
-      console.log(url);
       this.$http
         .post(url, this.user)
         .then((res) => {

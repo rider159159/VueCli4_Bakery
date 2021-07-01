@@ -14,11 +14,7 @@
 // 主要按鈕配色
 .btn-color{
     color:$white;
-    background-color: $primary;
-    &:focus, &:hover,&:active{
-        background-color:$dark;
-        color:$white;
-    }
+    background-color: $secondary;
 }
 // 文字大小
 .text-xl{

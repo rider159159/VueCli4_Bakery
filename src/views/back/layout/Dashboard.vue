@@ -38,6 +38,7 @@ export default {
         '$1',
       );
       // Axios 預設值
+      this.$http.defaults.headers.common.Authorization = `Bearer ${this.token}`;
       const api = `${process.env.VUE_APP_APIPATH}/auth/check`;
       this.$http
         .post(api, { api_token: this.token })

@@ -88,10 +88,8 @@ export default {
     background: url('~@/assets/image/bg-img/swiper1.jpg') center center no-repeat;
 }
 .swiper-item2 {
-    background: url('~@/assets/image/bg-img/8.jpg') center center no-repeat;
 }
 .swiper-item3 {
-    background: url('~@/assets/image/bg-img/18.jpg') center center no-repeat;
 }
 
 .swiper-container {
